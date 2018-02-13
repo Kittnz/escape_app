@@ -1,0 +1,13 @@
+/* = Structure
+----------------------------------------------------------------------------------------------------------------- */
+.page, .app { height: 100%; }
+.app { max-width: $app-width; min-width: $app-width; max-height: $app-height; min-height: $app-height;
+	position: relative; overflow: hidden; margin: 0 auto; background-color: $bg-grey;
+
+	&--dark { color: #fff; padding: 0 50px; }
+	&__head { height: 9%;  vertical-align: middle; }
+	&__main { height: 82%; position: relative; overflow: hidden; }
+	&__main--full { height: 100%; }
+	&__foot { height: 9%; position: relative; }
+}
+.padder { padding: 10px 0 20px; }

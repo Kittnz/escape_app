@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.mis.www" versionCode="10" version="1.0.0">
+
+    <name>Adventure Escape</name>
+    <description>Escape Game</description>
+    <author>Dan Ape</author>
+
+    <!--
+    <icon src="res/icon.png" />
+    <splash height="1136" platform="ios" src="res/screens/ios/Default-568h@2x~iphone.png" width="640" />
+-->
+    <preference name="orientation" value="landscape" />
+    <preference name="fullscreen" value="true" />
+    <preference name="DisallowOverscroll" value="true" />
+
+    <icon height="57" platform="ios" src="res/icons/ios/icon.png" width="57" />
+    <splash height="960" platform="ios" src="res/screens/ios/Default@2x~iphone.png" width="640" />
+
+
+</widget>

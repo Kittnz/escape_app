@@ -1,0 +1,89 @@
+/* = Mixins
+----------------------------------------------------------------------------------------------------------------- */
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+@mixin anim-name($names...) {
+	-webkit-animation-name: $names;
+  	   -moz-animation-name: $names;
+  			animation-name: $names;
+}
+
+@mixin anim-duration($duration) {
+	-webkit-animation-duration: $duration;
+       -moz-animation-duration: $duration;
+    		animation-duration: $duration;
+}
+
+@mixin anim-delay($delays...) {
+	-webkit-animation-delay: $delays;
+       -moz-animation-delay: $delays;
+    		animation-delay: $delays;
+}
+
+@mixin anim-dir($direction) {
+	-webkit-animation-direction: $direction;
+       -moz-animation-direction: $direction;
+    		animation-direction: $direction;
+}
+
+@mixin anim-fill($mode) {
+	-webkit-animation-fill-mode: $mode;
+       -moz-animation-fill-mode: $mode;
+    		animation-fill-mode: $mode;
+}
+
+@mixin anim-count($counts...) {
+  -webkit-animation-iteration-count: $counts;
+       -moz-animation-iteration-count: $counts;
+        animation-iteration-count: $counts;
+}
+
+@mixin timing-func($func) {
+	-webkit-transition-timing-function: $func;
+       -moz-transition-timing-function: $func;
+    		transition-timing-function: $func;
+}
+
+@mixin rotate($degrees) {
+    -webkit-transform: rotate($degrees);
+       -moz-transform: rotate($degrees);
+    	-ms-transform: rotate($degrees);
+    		transform: rotate($degrees);
+}
+
+@mixin translate3d($x, $y, $z) {
+	-webkit-transform: translate3d($x, $y, $z);
+	   -moz-transform: translate3d($x, $y, $z);
+	   	-ms-transform: translate3d($x, $y, $z);
+		    transform: translate3d($x, $y, $z);
+}
+
+@mixin valign($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin transition($trans) {
+  -webkit-transition: $trans;
+  -moz-transition: $trans;
+  transition: $trans;
+}
+
+@mixin box-sizing($sizing) {
+  -moz-box-sizing: $sizing;
+  -webkit-box-sizing: $sizing;
+  box-sizing: $sizing;
+}
